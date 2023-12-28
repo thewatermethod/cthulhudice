@@ -1,0 +1,15 @@
+{
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.3/theme.json",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "\"Tomo\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell, \"Helvetica Neue\",sans-serif",
+					"slug": "tomo",
+					"name": "Tomo"
+				}
+			]
+		}
+	}
+}

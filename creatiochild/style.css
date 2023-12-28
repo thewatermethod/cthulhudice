@@ -1,0 +1,21 @@
+/*
+Theme Name: Creatio - Child
+Theme URI: 
+Author: Matt Bevilacqua
+Author URI: https://www.mattbev.com
+Description: Child of Creatio for CthulhuDice.com / custom fonts
+Requires at least: 6.0
+Tested up to: 6.3.1
+Requires PHP: 5.7
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: creatio
+Text Domain: creatiochild
+Tags: blog, news, one-column, three-columns, wide-blocks, block-patterns, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, rtl-language-support, style-variations, template-editing, theme-options, threaded-comments, translation-ready, 
+*/
+
+@font-face {
+  font-family: "Tomo";
+  src: url("./TOMO-Acuario-Regular.otf");
+}

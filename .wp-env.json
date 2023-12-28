@@ -1,0 +1,16 @@
+{
+    "themes": [
+        "https://public-api.wordpress.com/rest/v1/themes/download/creatio.zip",
+        "./creatiochild"
+    ],
+    "config": {
+        "WP_UPLOAD_MAX_FILESIZE": "128M",
+        "WP_MEMORY_LIMIT": "256M"
+    },
+    "plugins": [
+        "https://downloads.wordpress.org/plugin/layout-grid.zip",
+        "https://downloads.wordpress.org/plugin/woocommerce.8.4.0.zip",
+        "https://downloads.wordpress.org/plugin/woo-gutenberg-products-block.11.7.0.zip",
+        "https://downloads.wordpress.org/plugin/full-site-editing.4.8269.zip"
+    ]
+  }
