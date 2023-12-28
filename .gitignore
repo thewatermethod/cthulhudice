@@ -1,3 +1,4 @@
 creatiochild.zip
 node_modules
 *.sql
+creatiochild/.env
