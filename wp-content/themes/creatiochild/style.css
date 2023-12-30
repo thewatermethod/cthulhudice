@@ -23,13 +23,12 @@ Tags: blog, news, one-column, three-columns, wide-blocks, block-patterns, custom
 /**
 - Custom product patterns on the homepage for CthulhuDice are wrapped in the class
 .cd-product-card
+
+this CSS gives us a little razzle dazzle on hover
+
 **/
 
 .cd-product-card:hover img {
-  transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.05, 1.05, 1.05);
   transition: transform 0.5s ease-in-out;
-}
-
-.cd-product-card h2 {
-  font-family: "Tomo";
 }
