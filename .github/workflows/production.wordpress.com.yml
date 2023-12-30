@@ -1,7 +1,7 @@
-name: Deploy to WordPress.com (Staging)
+name: Deploy to WordPress.com (Production)
 on:
   push:
-    branches: [staging]
+    branches: [main]
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
@@ -14,8 +14,8 @@ jobs:
         uses: Automattic/FTP-Deploy-Action@3.1.2
         with:
           ftp-server: sftp://sftp.wp.com/htdocs/
-          ftp-username: ${{ secrets.STAGING_FTP_USER }}
-          ftp-password: ${{ secrets.STAGING_FTP_PASSWORD }}
+          ftp-username: ${{ secrets.FTP_USER }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
           known-hosts: "\
             sftp.wp.com ssh-rsa AAAAB3NzaC1yc2EAAAADAQAB\
             AAABAQDwfT/YEhOKO2Z0+XrjRqUS5Q2Ali6AlhOhZtzlIfMOvm03Sype\
