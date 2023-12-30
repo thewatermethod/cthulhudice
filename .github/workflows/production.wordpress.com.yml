@@ -1,4 +1,4 @@
-name: Deploy to WordPress.com
+name: Deploy to WordPress.com (Production)
 on:
   push:
     branches: [main]
