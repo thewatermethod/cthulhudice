@@ -1,7 +1,7 @@
-name: Deploy to WordPress.com
+name: Deploy to WordPress.com (Staging)
 on:
   push:
-    branches: [ staging ]
+    branches: [staging]
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
@@ -25,4 +25,4 @@ jobs:
             YCtcKbHS+Yy4RwcO9PxZUBkeMXUrejms027bRcdVfwf55hWSD9xYEHpE\
             HupkSL4ofWs3UKeRGz+jCCzl7Nu0S6VSwK4Zzll0auHI0Hwh8WKTJbSn\
             1gxCdF93/rmP\
-          "
+            "
