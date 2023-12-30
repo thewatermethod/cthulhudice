@@ -2,6 +2,7 @@
 node_modules
 *.sql
 uploads
+.DS_Store
 
 # ignore files related to theme development
 wp-content/themes/creatiochild/.env
