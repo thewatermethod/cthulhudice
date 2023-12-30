@@ -1,5 +1,9 @@
-creatiochild.zip
+# ignore files related to local development
 node_modules
 *.sql
-creatiochild/.env
 uploads
+
+# ignore files related to theme development
+wp-content/themes/creatiochild/.env
+creatiochild.zip
+

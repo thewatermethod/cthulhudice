@@ -19,3 +19,17 @@ Tags: blog, news, one-column, three-columns, wide-blocks, block-patterns, custom
   font-family: "Tomo";
   src: url("./TOMO-Acuario-Regular.otf");
 }
+
+/**
+- Custom product patterns on the homepage for CthulhuDice are wrapped in the class
+.cd-product-card
+**/
+
+.cd-product-card:hover img {
+  transform: scale3d(1.1, 1.1, 1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.cd-product-card h2 {
+  font-family: "Tomo";
+}
