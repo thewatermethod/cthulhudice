@@ -106,8 +106,8 @@
 			"fontFamilies": [
 				{
 					"fontFamily": "\"Tomo\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell, \"Helvetica Neue\",sans-serif",
-					"slug": "tomo",
-					"name": "Tomo"
+					"name": "Tomo",
+					"slug": "tomo"
 				},
 				{
 					"fontFace": [],
@@ -318,6 +318,9 @@
 							"text": "var(--wp--preset--color--primary)"
 						}
 					}
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--libre-baskerville)"
 				}
 			},
 			"core/image": {
@@ -420,6 +423,10 @@
 				"spacing": {
 					"margin": {
 						"bottom": "0"
+					},
+					"padding": {
+						"bottom": "20px",
+						"top": "60px"
 					}
 				}
 			},
