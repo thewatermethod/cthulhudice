@@ -57,3 +57,17 @@
     }
 
     add_action( 'wp_footer', 'creatiochild_wp_footer' );
+
+    function creatiochild_enqueue_scripts() {
+        /**
+         * frontend ajax requests.
+         */
+        wp_enqueue_script( 'dtrpg', get_stylesheet_directory_uri() . '/assets/dtrpg.js', array(), null, true );
+        wp_localize_script( 'dtrpg', 'dtrpg_config',
+            array(
+                'affilate_id' => 463552,
+                'link_source' => 'cthulhudice-com'
+            )
+        );
+    }
+    add_action( 'wp_enqueue_scripts', 'creatiochild_enqueue_scripts');
