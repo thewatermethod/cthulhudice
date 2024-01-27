@@ -30,3 +30,80 @@ this CSS gives us a little razzle dazzle when hovering over a product image
   transform: scale(1.02) rotate(1deg);
   transition: transform 0.5s ease-in-out;
 }
+
+/**
+CSS for switching back to tradtional woo product template
+
+1/26/24: Debugging an issue with a newly added product where the "Product description"
+and the other tabs were mysteriously missing. I was unable to penetrate the mystery;
+the_content() was returning an empty string, but even arbitrary output was not being
+printed.
+
+I solved this by reverting to the legacy Woo product template. I'm not sure why this
+works, but it does. The following CSS changes are minor improvements, some of which I made 
+in the new theme editor but couldn't repro in the legacy template, which is incompatible
+with the new editor
+
+**/
+
+/** Slightly more modern layout **/
+@media screen and (min-width: 680px) {
+  [data-block-name="woocommerce/legacy-template"][data-template="single-product"]
+    > .product {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 400px 2fr;
+  }
+
+  [data-block-name="woocommerce/legacy-template"][data-template="single-product"]
+    > .product
+    .woocommerce-product-gallery,
+  [data-block-name="woocommerce/legacy-template"][data-template="single-product"]
+    > .product
+    .summary {
+    float: none;
+    width: 100%;
+  }
+
+  .woocommerce-tabs,
+  .woocommerce div.product .related.products {
+    grid-column: span 2;
+  }
+}
+
+/* use consistent font for product titles and headings, etc */
+[data-block-name="woocommerce/legacy-template"][data-template="single-product"]
+  h1,
+[data-block-name="woocommerce/legacy-template"][data-template="single-product"]
+  h2,
+[data-block-name="woocommerce/legacy-template"][data-template="single-product"]
+  h3,
+[data-block-name="woocommerce/legacy-template"][data-template="single-product"]
+  h4 {
+  font-family: var(--wp--preset--font-family--literata);
+}
+
+/* restyle the product meta */
+.product_meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.product_meta a {
+  font-weight: normal;
+}
+
+/* hide the redundant "DESCRIPTION" heading */
+.woocommerce-Tabs-panel h2:first-of-type {
+  display: none;
+}
+
+/**
+Just a fix for the product checkout
+**/
+
+.wc-block-checkout {
+  padding: 1.5rem;
+}
