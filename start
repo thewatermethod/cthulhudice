@@ -5,8 +5,20 @@
 ## first, we close open containers
 wp-env stop
 
+## it it fails, we exit 1
+## (if we don't exit, we get two "Is docker on, dummy?")
+if [ $? -eq 1 ]; then
+    exit 1
+fi
+
 ## spin up docker
 wp-env start
+
+## it it fails, we exit 1
+## (if we don't exit, browser-sync starts and obviously does nothing)
+if [ $? -eq 1 ]; then
+    exit 1
+fi
 
 ## start up browser-sync
 npm run dev
